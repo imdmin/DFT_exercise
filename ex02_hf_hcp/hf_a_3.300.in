@@ -1,0 +1,43 @@
+&CONTROL
+   calculation      = 'scf'
+   restart_mode     = 'from_scratch'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './tmp_3.300'
+   prefix           = 'hf_3.300'
+   pseudo_dir       = '../pseudo'
+/
+&SYSTEM
+   ecutwfc          = 50.0
+   ecutrho          = 400.0
+   occupations      = 'smearing'
+   degauss          = 0.02
+   smearing         = 'mv'
+   ntyp             = 1
+   nat              = 2
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-08
+   mixing_beta      = 0.7
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Hf 178.49 Hf.pbe-spn-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+8 8 6  0 0 0
+
+CELL_PARAMETERS angstrom
+3.30000000000000 0.00000000000000 0.00000000000000
+-1.65000000000000 2.85788383248865 0.00000000000000
+0.00000000000000 0.00000000000000 5.21400000000000
+
+ATOMIC_POSITIONS angstrom
+Hf 0.0000000000 0.0000000000 0.0000000000 
+Hf 0.0000000000 1.9052558883 2.6070000000 
+
