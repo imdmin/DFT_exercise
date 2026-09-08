@@ -1,0 +1,8 @@
+&DOS
+   prefix     = 'ag2o'
+   outdir     = './tmp_dos'
+   fildos     = 'ag2o.dos'
+   Emin       = -5.0
+   Emax       = 25.0
+   DeltaE     = 0.02
+/
