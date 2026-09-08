@@ -1,0 +1,8 @@
+&DOS
+   prefix     = 'ag_k8'
+   outdir     = './tmp_k8'
+   fildos     = 'ag_k8.dos'
+   Emin       = 5.0
+   Emax       = 25.0
+   DeltaE     = 0.05
+/
